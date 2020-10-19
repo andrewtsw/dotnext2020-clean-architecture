@@ -1,4 +1,6 @@
-﻿namespace Dotnext.Entities
+﻿using System;
+
+namespace Dotnext.Entities
 {
     public class OrderItem
     {
@@ -13,5 +15,10 @@
         public decimal UnitPrice { get; set; }
         public short Quantity { get; set; }
         public decimal Discount { get; set; }
+
+        public decimal CalculatePrice()
+        {
+            return UnitPrice * Quantity;
+        }
     }
 }
