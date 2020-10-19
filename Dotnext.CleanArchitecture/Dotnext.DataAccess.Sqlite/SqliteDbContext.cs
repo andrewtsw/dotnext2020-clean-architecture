@@ -1,11 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Dotnext.Entities;
+using Dotnext.UseCases.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System.Reflection;
-using System.Threading.Tasks;
-using Dotnext.Entities;
 
 namespace Dotnext.DataAccess.Sqlite
 {
-    public class SqliteDbContext : DbContext
+    public class SqliteDbContext : DbContext, IDbContext
     {
         public SqliteDbContext(DbContextOptions<SqliteDbContext> options)
             : base(options)
@@ -17,11 +17,6 @@ namespace Dotnext.DataAccess.Sqlite
         public DbSet<OrderItem> OrderItems { get; set; }
 
         public DbSet<Product> Products { get; set; }
-
-        public Task<int> SaveChangesAsync()
-        {
-            return base.SaveChangesAsync();
-        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

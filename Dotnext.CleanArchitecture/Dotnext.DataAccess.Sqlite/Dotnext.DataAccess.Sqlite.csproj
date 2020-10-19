@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Dotnext.Entities\Dotnext.Entities.csproj" />
+    <ProjectReference Include="..\Dotnext.UseCases\Dotnext.UseCases.csproj" />
   </ItemGroup>
 
 </Project>

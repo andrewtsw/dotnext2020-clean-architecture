@@ -1,4 +1,4 @@
-﻿using Dotnext.DataAccess.Sqlite;
+﻿using Dotnext.UseCases.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,9 +8,9 @@ namespace Dotnext.UseCases
 {
     internal class OrderService : IOrderService
     {
-        private readonly SqliteDbContext _context;
+        private readonly IDbContext _context;
 
-        public OrderService(SqliteDbContext context)
+        public OrderService(IDbContext context)
         {
             _context = context;
         }
