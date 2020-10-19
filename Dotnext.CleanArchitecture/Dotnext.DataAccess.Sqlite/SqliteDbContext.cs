@@ -1,5 +1,5 @@
-﻿using Dotnext.Entities;
-using Dotnext.UseCases.Interfaces;
+﻿using Dotnext.DataAccess.Interfaces;
+using Dotnext.Entities;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 

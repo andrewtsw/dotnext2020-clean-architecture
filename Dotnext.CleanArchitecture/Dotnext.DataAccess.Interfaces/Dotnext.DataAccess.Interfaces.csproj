@@ -9,9 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Dotnext.DataAccess.Interfaces\Dotnext.DataAccess.Interfaces.csproj" />
     <ProjectReference Include="..\Dotnext.Entities\Dotnext.Entities.csproj" />
-    <ProjectReference Include="..\Dotnext.Shared\Dotnext.Shared.csproj" />
   </ItemGroup>
 
 </Project>

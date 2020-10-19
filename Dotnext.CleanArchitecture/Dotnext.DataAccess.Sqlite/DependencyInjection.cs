@@ -1,4 +1,4 @@
-﻿using Dotnext.UseCases.Interfaces;
+﻿using Dotnext.DataAccess.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;

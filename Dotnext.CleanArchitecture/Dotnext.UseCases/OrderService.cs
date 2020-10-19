@@ -1,4 +1,4 @@
-﻿using Dotnext.UseCases.Interfaces;
+﻿using Dotnext.DataAccess.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
