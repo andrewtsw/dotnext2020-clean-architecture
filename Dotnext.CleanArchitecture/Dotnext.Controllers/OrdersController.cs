@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Dotnext.Web.Controllers
+namespace Dotnext.Controllers
 {
     [ApiController]
     [Route("[controller]")]

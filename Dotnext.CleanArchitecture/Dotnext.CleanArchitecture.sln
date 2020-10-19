@@ -3,25 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnext.Entities", "Dotnext.Entities\Dotnext.Entities.csproj", "{508BB4A9-22F6-463C-8384-4883004D3C47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotnext.Entities", "Dotnext.Entities\Dotnext.Entities.csproj", "{508BB4A9-22F6-463C-8384-4883004D3C47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnext.DataAccess.Sqlite", "Dotnext.DataAccess.Sqlite\Dotnext.DataAccess.Sqlite.csproj", "{19558CD6-0A4B-4439-994B-167BC50EF9E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotnext.DataAccess.Sqlite", "Dotnext.DataAccess.Sqlite\Dotnext.DataAccess.Sqlite.csproj", "{19558CD6-0A4B-4439-994B-167BC50EF9E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnext.UseCases", "Dotnext.UseCases\Dotnext.UseCases.csproj", "{E08A5886-32E8-469A-A703-61B77616E487}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotnext.UseCases", "Dotnext.UseCases\Dotnext.UseCases.csproj", "{E08A5886-32E8-469A-A703-61B77616E487}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnext.Web", "Dotnext.Web\Dotnext.Web.csproj", "{730BFFAC-7B29-4082-BAE4-4317528B85CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotnext.Web", "Dotnext.Web\Dotnext.Web.csproj", "{730BFFAC-7B29-4082-BAE4-4317528B85CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnext.Shared", "Dotnext.Shared\Dotnext.Shared.csproj", "{A091312D-F73A-4D80-B5AC-D777C4EE1BEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotnext.Shared", "Dotnext.Shared\Dotnext.Shared.csproj", "{A091312D-F73A-4D80-B5AC-D777C4EE1BEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnext.DataAccess.Interfaces", "Dotnext.DataAccess.Interfaces\Dotnext.DataAccess.Interfaces.csproj", "{89BF044A-B1B0-410C-8A0D-4E8A4A603A90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotnext.DataAccess.Interfaces", "Dotnext.DataAccess.Interfaces\Dotnext.DataAccess.Interfaces.csproj", "{89BF044A-B1B0-410C-8A0D-4E8A4A603A90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnext.Integration.Interfaces", "Dotnext.Integration.Interfaces\Dotnext.Integration.Interfaces.csproj", "{0866B8B1-28A3-4684-B2BE-DAE5F5CBB048}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotnext.Integration.Interfaces", "Dotnext.Integration.Interfaces\Dotnext.Integration.Interfaces.csproj", "{0866B8B1-28A3-4684-B2BE-DAE5F5CBB048}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnext.Integration.Implementation", "Dotnext.Integration.Implementation\Dotnext.Integration.Implementation.csproj", "{5B6A5A4B-E210-4A46-B6E3-2AA068B93AA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotnext.Integration.Implementation", "Dotnext.Integration.Implementation\Dotnext.Integration.Implementation.csproj", "{5B6A5A4B-E210-4A46-B6E3-2AA068B93AA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnext.DomainServices.Interfaces", "Dotnext.DomainServices.Interfaces\Dotnext.DomainServices.Interfaces.csproj", "{170D1619-D068-45EB-BBF3-C2FCCBF463C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotnext.DomainServices.Interfaces", "Dotnext.DomainServices.Interfaces\Dotnext.DomainServices.Interfaces.csproj", "{170D1619-D068-45EB-BBF3-C2FCCBF463C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnext.DomainServices.Implementation", "Dotnext.DomainServices.Implementation\Dotnext.DomainServices.Implementation.csproj", "{90D6707E-DD66-490E-9832-4BC4C1F5D7E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotnext.DomainServices.Implementation", "Dotnext.DomainServices.Implementation\Dotnext.DomainServices.Implementation.csproj", "{90D6707E-DD66-490E-9832-4BC4C1F5D7E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnext.Controllers", "Dotnext.Controllers\Dotnext.Controllers.csproj", "{775D73D4-2EFC-4BA9-9CD6-574F0406B45E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{90D6707E-DD66-490E-9832-4BC4C1F5D7E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90D6707E-DD66-490E-9832-4BC4C1F5D7E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90D6707E-DD66-490E-9832-4BC4C1F5D7E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{775D73D4-2EFC-4BA9-9CD6-574F0406B45E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{775D73D4-2EFC-4BA9-9CD6-574F0406B45E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{775D73D4-2EFC-4BA9-9CD6-574F0406B45E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{775D73D4-2EFC-4BA9-9CD6-574F0406B45E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
