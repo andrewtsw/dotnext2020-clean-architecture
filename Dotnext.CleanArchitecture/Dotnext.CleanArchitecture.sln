@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnext.UseCases", "Dotnext
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnext.Web", "Dotnext.Web\Dotnext.Web.csproj", "{730BFFAC-7B29-4082-BAE4-4317528B85CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnext.Shared", "Dotnext.Shared\Dotnext.Shared.csproj", "{A091312D-F73A-4D80-B5AC-D777C4EE1BEC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{730BFFAC-7B29-4082-BAE4-4317528B85CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{730BFFAC-7B29-4082-BAE4-4317528B85CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{730BFFAC-7B29-4082-BAE4-4317528B85CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A091312D-F73A-4D80-B5AC-D777C4EE1BEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A091312D-F73A-4D80-B5AC-D777C4EE1BEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A091312D-F73A-4D80-B5AC-D777C4EE1BEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A091312D-F73A-4D80-B5AC-D777C4EE1BEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

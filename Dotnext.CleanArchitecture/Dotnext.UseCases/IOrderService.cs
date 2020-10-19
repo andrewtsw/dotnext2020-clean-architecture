@@ -1,5 +1,4 @@
-﻿using Dotnext.Entities;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Dotnext.UseCases
