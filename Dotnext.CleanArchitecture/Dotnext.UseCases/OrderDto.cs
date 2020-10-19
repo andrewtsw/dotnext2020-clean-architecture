@@ -13,11 +13,14 @@ namespace Dotnext.UseCases
         {
             Id = order.Id;
             Comment = order.Comment;
+            ExternalId = order.ExternalId;
         }
 
         public int Id { get; set; }
 
         public string Comment { get; set; }
+
+        public string ExternalId { get; set; }
 
         public decimal SubTotal { get; set; }
 

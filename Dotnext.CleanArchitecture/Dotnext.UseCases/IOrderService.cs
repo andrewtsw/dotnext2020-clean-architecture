@@ -8,5 +8,7 @@ namespace Dotnext.UseCases
         Task<OrderDto> GetByIdAsync(int id);
 
         Task<List<OrderDto>> GetAllAsync();
+
+        Task<OrderDto> SendAsync(int id);
     }
 }

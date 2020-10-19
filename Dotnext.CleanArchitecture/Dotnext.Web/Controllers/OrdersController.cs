@@ -26,5 +26,11 @@ namespace Dotnext.Web.Controllers
         {
             return await _orderService.GetAllAsync();
         }
+
+        [HttpPost("{id}")]
+        public async Task<OrderDto> Send(int id)
+        {
+            return await _orderService.SendAsync(id);
+        }
     }
 }

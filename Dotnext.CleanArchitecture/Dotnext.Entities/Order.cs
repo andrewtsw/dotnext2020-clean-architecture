@@ -8,6 +8,8 @@ namespace Dotnext.Entities
 
         public string Comment { get; set; }
 
+        public string ExternalId { get; set; }
+
         public ICollection<OrderItem> OrderItems { get; set; }
     }
 }

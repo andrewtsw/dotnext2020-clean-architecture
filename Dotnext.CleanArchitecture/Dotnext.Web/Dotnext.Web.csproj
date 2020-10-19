@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Dotnext.DataAccess.Sqlite\Dotnext.DataAccess.Sqlite.csproj" />
+    <ProjectReference Include="..\Dotnext.Integration.Implementation\Dotnext.Integration.Implementation.csproj" />
     <ProjectReference Include="..\Dotnext.UseCases\Dotnext.UseCases.csproj" />
   </ItemGroup>
 
