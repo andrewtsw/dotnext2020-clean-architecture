@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Dotnext.DataAccess.Sqlite\Dotnext.DataAccess.Sqlite.csproj" />
+    <ProjectReference Include="..\Dotnext.Entities\Dotnext.Entities.csproj" />
+  </ItemGroup>
+
+</Project>
