@@ -15,10 +15,10 @@ namespace Dotnext.UseCases
             Comment = order.Comment;
             ExternalId = order.ExternalId;
 
-            SubTotal = order.CalculateSubTotal();
-            Tax = order.CalculateTax();
-            Discount = order.CalculateDiscount();
-            Total = order.CalculateTotal(SubTotal, Discount, Tax);
+            //SubTotal = order.CalculateSubTotal();
+            //Tax = order.CalculateTax();
+            //Discount = order.CalculateDiscount();
+            //Total = order.CalculateTotal(SubTotal, Discount, Tax);
         }
 
         public int Id { get; set; }

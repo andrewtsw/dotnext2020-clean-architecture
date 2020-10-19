@@ -1,4 +1,5 @@
 using Dotnext.DataAccess.Sqlite;
+using Dotnext.DomainServices.Implementation;
 using Dotnext.Integration.Implementation;
 using Dotnext.UseCases;
 using Microsoft.AspNetCore.Builder;
@@ -24,6 +25,7 @@ namespace Dotnext.Web
             services.AddDataAccessSqlite(Configuration);
             services.AddUseCases();
             services.AddOrdersIntegration();
+            services.AddDomainServices();
 
             services.AddControllers();
         }

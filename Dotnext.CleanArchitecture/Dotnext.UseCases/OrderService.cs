@@ -1,4 +1,5 @@
 ﻿using Dotnext.DataAccess.Interfaces;
+using Dotnext.DomainServices.Interfaces;
 using Dotnext.Integration.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
@@ -11,11 +12,15 @@ namespace Dotnext.UseCases
     {
         private readonly IDbContext _context;
         private readonly IOrdersIntegrationService _ordersIntegrationService;
+        private readonly IOrdersDomainService _ordersDomainService;
 
-        public OrderService(IDbContext context, IOrdersIntegrationService ordersIntegrationService)
+        public OrderService(IDbContext context, 
+            IOrdersIntegrationService ordersIntegrationService,
+            IOrdersDomainService ordersDomainService)
         {
             _context = context;
             _ordersIntegrationService = ordersIntegrationService;
+            _ordersDomainService = ordersDomainService;
         }
 
         public async Task<List<OrderDto>> GetAllAsync()
@@ -25,7 +30,13 @@ namespace Dotnext.UseCases
                 .ToListAsync();
 
             return orders
-                .Select(o => new OrderDto(o))
+                .Select(order => new OrderDto(order)
+                {
+                    SubTotal = _ordersDomainService.CalculateSubTotal(order),
+                    Tax = _ordersDomainService.CalculateTax(order),
+                    Discount = _ordersDomainService.CalculateDiscount(order),
+                    Total = _ordersDomainService.CalculateTotalPrice(order)
+                })
                 .ToList();
         }
 
@@ -35,7 +46,13 @@ namespace Dotnext.UseCases
                 .Include(o => o.OrderItems)
                 .SingleAsync(o => o.Id == id);
 
-            return new OrderDto(order);
+            return new OrderDto(order)
+            {
+                SubTotal = _ordersDomainService.CalculateSubTotal(order),
+                Tax = _ordersDomainService.CalculateTax(order),
+                Discount = _ordersDomainService.CalculateDiscount(order),
+                Total = _ordersDomainService.CalculateTotalPrice(order)
+            };
         }
 
         public async Task<OrderDto> SendAsync(int id)

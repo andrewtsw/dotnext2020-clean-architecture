@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Dotnext.Entities
+﻿namespace Dotnext.Entities
 {
     public class OrderItem
     {

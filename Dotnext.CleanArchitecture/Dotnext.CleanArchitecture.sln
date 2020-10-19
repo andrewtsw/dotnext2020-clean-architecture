@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnext.Integration.Interfa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnext.Integration.Implementation", "Dotnext.Integration.Implementation\Dotnext.Integration.Implementation.csproj", "{5B6A5A4B-E210-4A46-B6E3-2AA068B93AA9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnext.DomainServices.Interfaces", "Dotnext.DomainServices.Interfaces\Dotnext.DomainServices.Interfaces.csproj", "{170D1619-D068-45EB-BBF3-C2FCCBF463C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnext.DomainServices.Implementation", "Dotnext.DomainServices.Implementation\Dotnext.DomainServices.Implementation.csproj", "{90D6707E-DD66-490E-9832-4BC4C1F5D7E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{5B6A5A4B-E210-4A46-B6E3-2AA068B93AA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B6A5A4B-E210-4A46-B6E3-2AA068B93AA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B6A5A4B-E210-4A46-B6E3-2AA068B93AA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{170D1619-D068-45EB-BBF3-C2FCCBF463C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{170D1619-D068-45EB-BBF3-C2FCCBF463C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{170D1619-D068-45EB-BBF3-C2FCCBF463C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{170D1619-D068-45EB-BBF3-C2FCCBF463C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90D6707E-DD66-490E-9832-4BC4C1F5D7E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90D6707E-DD66-490E-9832-4BC4C1F5D7E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90D6707E-DD66-490E-9832-4BC4C1F5D7E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90D6707E-DD66-490E-9832-4BC4C1F5D7E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
