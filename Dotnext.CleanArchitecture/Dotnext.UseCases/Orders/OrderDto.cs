@@ -1,6 +1,6 @@
 ﻿using Dotnext.Entities;
 
-namespace Dotnext.UseCases
+namespace Dotnext.UseCases.Orders
 {
     public class OrderDto
     {

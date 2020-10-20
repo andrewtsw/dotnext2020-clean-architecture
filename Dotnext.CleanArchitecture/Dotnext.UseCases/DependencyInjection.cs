@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using MediatR;
+using Microsoft.Extensions.DependencyInjection;
+using System.Reflection;
 
 namespace Dotnext.UseCases
 {
@@ -6,7 +8,7 @@ namespace Dotnext.UseCases
     {
         public static IServiceCollection AddUseCases(this IServiceCollection services)
         {
-            services.AddScoped<IOrderService, OrderService>();
+            services.AddMediatR(Assembly.GetExecutingAssembly());
 
             return services;
         }
