@@ -14,7 +14,7 @@
     <ProjectReference Include="..\Dotnext.DataAccess.Interfaces\Dotnext.DataAccess.Interfaces.csproj" />
     <ProjectReference Include="..\Dotnext.DomainServices.Interfaces\Dotnext.DomainServices.Interfaces.csproj" />
     <ProjectReference Include="..\Dotnext.Entities\Dotnext.Entities.csproj" />
-    <ProjectReference Include="..\Dotnext.Integration.Implementation\Dotnext.Integration.Implementation.csproj" />
+    <ProjectReference Include="..\Dotnext.Integration.Interfaces\Dotnext.Integration.Interfaces.csproj" />
     <ProjectReference Include="..\Dotnext.Shared\Dotnext.Shared.csproj" />
   </ItemGroup>
 
