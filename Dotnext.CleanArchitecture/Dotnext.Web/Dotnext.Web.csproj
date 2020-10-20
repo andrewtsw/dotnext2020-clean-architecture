@@ -16,15 +16,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Dotnext.ApplicationServices.Implementation\Dotnext.ApplicationServices.Implementation.csproj" />
     <ProjectReference Include="..\Dotnext.Controllers\Dotnext.Controllers.csproj" />
     <ProjectReference Include="..\Dotnext.DataAccess.Sqlite\Dotnext.DataAccess.Sqlite.csproj" />
     <ProjectReference Include="..\Dotnext.DomainServices.Implementation\Dotnext.DomainServices.Implementation.csproj" />
     <ProjectReference Include="..\Dotnext.Integration.Implementation\Dotnext.Integration.Implementation.csproj" />
     <ProjectReference Include="..\Dotnext.UseCases\Dotnext.UseCases.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Controllers\" />
   </ItemGroup>
 
 

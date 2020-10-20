@@ -23,7 +23,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotnext.DomainServices.Inte
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotnext.DomainServices.Implementation", "Dotnext.DomainServices.Implementation\Dotnext.DomainServices.Implementation.csproj", "{90D6707E-DD66-490E-9832-4BC4C1F5D7E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnext.Controllers", "Dotnext.Controllers\Dotnext.Controllers.csproj", "{775D73D4-2EFC-4BA9-9CD6-574F0406B45E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotnext.Controllers", "Dotnext.Controllers\Dotnext.Controllers.csproj", "{775D73D4-2EFC-4BA9-9CD6-574F0406B45E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnext.ApplicationServices.Interfaces", "Dotnext.ApplicationServices.Interfaces\Dotnext.ApplicationServices.Interfaces.csproj", "{8E06F720-8219-4F5D-BCDD-D7178ACE0B3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnext.ApplicationServices.Implementation", "Dotnext.ApplicationServices.Implementation\Dotnext.ApplicationServices.Implementation.csproj", "{733E1466-D209-433D-8FC7-AAF8F0AE6ABE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +79,14 @@ Global
 		{775D73D4-2EFC-4BA9-9CD6-574F0406B45E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{775D73D4-2EFC-4BA9-9CD6-574F0406B45E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{775D73D4-2EFC-4BA9-9CD6-574F0406B45E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E06F720-8219-4F5D-BCDD-D7178ACE0B3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E06F720-8219-4F5D-BCDD-D7178ACE0B3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E06F720-8219-4F5D-BCDD-D7178ACE0B3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E06F720-8219-4F5D-BCDD-D7178ACE0B3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{733E1466-D209-433D-8FC7-AAF8F0AE6ABE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{733E1466-D209-433D-8FC7-AAF8F0AE6ABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{733E1466-D209-433D-8FC7-AAF8F0AE6ABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{733E1466-D209-433D-8FC7-AAF8F0AE6ABE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

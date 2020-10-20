@@ -1,3 +1,4 @@
+using Dotnext.ApplicationServices.Implementation;
 using Dotnext.DataAccess.Sqlite;
 using Dotnext.DomainServices.Implementation;
 using Dotnext.Integration.Implementation;
@@ -22,10 +23,16 @@ namespace Dotnext.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDataAccessSqlite(Configuration);
-            services.AddUseCases();
-            services.AddOrdersIntegration();
+            // Domain
             services.AddDomainServices();
+
+            // Integration
+            services.AddOrdersIntegration();
+            services.AddDataAccessSqlite(Configuration);
+
+            // Application
+            services.AddUseCases();
+            services.AddApplicationServices();
 
             services.AddControllers();
         }

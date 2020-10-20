@@ -1,4 +1,5 @@
-﻿using Dotnext.DataAccess.Interfaces;
+﻿using Dotnext.ApplicationServices.Interfaces;
+using Dotnext.DataAccess.Interfaces;
 using Dotnext.DomainServices.Interfaces;
 using Dotnext.Integration.Interfaces;
 using Microsoft.EntityFrameworkCore;
@@ -13,14 +14,17 @@ namespace Dotnext.UseCases
         private readonly IDbContext _context;
         private readonly IOrdersIntegrationService _ordersIntegrationService;
         private readonly IOrdersDomainService _ordersDomainService;
+        private readonly IPermissionsManager _permissionsManager;
 
         public OrderService(IDbContext context, 
             IOrdersIntegrationService ordersIntegrationService,
-            IOrdersDomainService ordersDomainService)
+            IOrdersDomainService ordersDomainService,
+            IPermissionsManager permissionsManager)
         {
             _context = context;
             _ordersIntegrationService = ordersIntegrationService;
             _ordersDomainService = ordersDomainService;
+            _permissionsManager = permissionsManager;
         }
 
         public async Task<List<OrderDto>> GetAllAsync()
@@ -45,6 +49,8 @@ namespace Dotnext.UseCases
             var order =  await _context.Orders
                 .Include(o => o.OrderItems)
                 .SingleAsync(o => o.Id == id);
+
+            var permissions = _permissionsManager.GetCurrentUserPermissions();
 
             return new OrderDto(order)
             {
